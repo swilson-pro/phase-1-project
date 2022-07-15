@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>Maybelline Products</title>
+</head>
+<body>
+<header>
+    <h3 id="header">Makeup Product Creator</h3>
+</header>
+
+<!-- Product Menu -->
+<div id="product-menu">
+<!-- Product Images Here -->
+
+</div>
+<div id="dropdown">
+
+<label for="company">Choose target company:</label>
+
+<select name="companies" id="company-selector">
+  <option value="maybelline">Maybelline</option>
+  <option value="coverGirl">Cover Girl</option>
+  <option value="revlon">Revlon</option>
+
+</select>
+
+</div>
+
+<div id="product-details">
+    <img class="detail-image" src="makeupimage.png" alt="insert image here" />
+    <h2 class="name">Insert Name Here</h2>
+    <h3 class="price">Insert Price Here</h3>
+</div>
+
+<h3>Rating</h3>
+<p>
+    <span id="rating-display">Insert rating here</span>
+
+</p>
+<h3>Description:</h3>
+<p id="des-Display">
+    Insert Description Here
+</p>
+
+<!-- New Product Form -->
+
+<form id="new-product">
+    <h4>Add New Product</h4>
+    <label for="name">Product Name: </label>
+    <input type="text" name="name" id="new-name"/>
+    <label for="price">Price: </label>
+    <input type="text" name="price" id="new-price" />
+    <label for="image">Image: </label>
+    <input type="text" name="image" id="new-image" />
+    <label for="rating">Rating: </label>
+    <input type="number" name="rating" id="new-rating"/>
+    <label for="new-des">Description: </label>
+    <textarea name="new-des" id="new-des"></textarea>
+    <input type="submit" value="Add" />
+</form>
+    <script src="index.js"></script>
+</body>
+</html>
